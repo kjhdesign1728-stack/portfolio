@@ -20,7 +20,7 @@ function shouldIgnore(filePath) {
 function deploy(attempt = 1) {
   log(`배포 시작... (시도 ${attempt}/${MAX_RETRIES})`);
   try {
-    execSync(`${GIT} add -A && ${GIT} commit -m "Update portfolio" --allow-empty && ${GIT} push origin main`, {
+    execSync(`${GIT} add -A && ${GIT} commit -m "Update portfolio" --allow-empty && /Users/macbookprokonseutanteugimjaehwi/bin/gh auth setup-git && ${GIT} push origin main`, {
       cwd: PROJECT_DIR,
       stdio: 'inherit',
       env: { ...process.env, PATH: '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/macbookprokonseutanteugimjaehwi/bin' }
