@@ -18,16 +18,21 @@ const PORTFOLIO_DATA = {
       categories: ["디지털"],
       date: "2024.03",
       thumbnail: "images/project-web/thumb.jpg",
-      images: [
-        "images/project-web/mockup_desktop_main.png",
-        "images/project-web/mockup_desktop_brand.png",
-        "images/project-web/mockup_desktop_promotion.png",
-        "images/project-web/mockup_desktop_product.png",
-        "images/project-web/mockup_mobile_main.png",
-        "images/project-web/mockup_mobile_product.png"
-      ],
+      cover: "images/project-web/desktop_main.png",
       overview: "Refilled 공식 자사몰의 전체 UI/UX 디자인을 담당했습니다. 메인 페이지부터 브랜드 페이지, 프로모션 기획전, 제품 상세페이지까지 브랜드 아이덴티티를 기반으로 일관된 디지털 경험을 설계했습니다.",
       role: "UI/UX 디자인, 웹 디자인, 상세페이지 디자인",
+      client: "Refilled",
+      year: "2023 — 2024",
+      sections: [
+        { type: "full", image: "images/project-web/mockup_desktop_main.png", label: "Main Page" },
+        { type: "full", image: "images/project-web/mockup_desktop_brand.png", label: "Brand Page" },
+        { type: "full", image: "images/project-web/mockup_desktop_promotion.png", label: "Promotion" },
+        { type: "full", image: "images/project-web/mockup_desktop_product.png", label: "Product Detail" },
+        { type: "double", images: ["images/project-web/mockup_mobile_main.png", "images/project-web/mockup_mobile_product.png"], label: "Mobile Responsive" }
+      ],
+      images: [
+        "images/project-web/mockup_desktop_main.png"
+      ],
       visible: true
     },
     {
